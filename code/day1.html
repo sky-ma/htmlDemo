@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>practice</title>
+</head>
+<body background="E:\Practice\HTML\demo\picture\bg.jpg">
+<p>HTML一周时间</p>
+<p>css时间，2周；适配，flex布局</p>
+<p>psd切图练习，切十张图</p>
+<p>es6 es5-js基础学习--看视频--</p>
+<p>jquery,vue</p>
+<h4>知识点：新开窗口；<br/>如果把链接的 target 属性设置为 "_blank"，该链接会在新窗口中打开。</h4>
+<a href="http://www.w3school.com.cn/" target="_blank">Visit W3School!</a>
+<h4>知识点：测试锚点；<br/>本页锚点链接或者其他页面跳转到本页锚点链接</h4>
+<a name="label1">我是锚点名称tab1</a>
+<h4>知识点，引用</h4>
+<P>lab1的内容<q>引用内容加了双引号，但是没有换行</q></p>
+<!--引用，在标签<p>里面，引用内容加引号不换行-->
+
+<a name="label2">我是锚点名称tab2</a>
+<P>lab2的内容</p><q>引用内容加了双引号，但是在p之外，所以换行了</q>
+
+<!--<q>引用，在标签<p>外面，引用内容加引号，换至下一行-->
+
+<P>lab2的内容</p><q>引用内容加了双引号，但是在p之外，所以换行了</q>
+
+<a name="label3">tab3</a>
+<P>lab3的内容</p><q>引用内容加了双引号，但是在p之外，所以换行了</q>
+
+<h4>知识点：水平线hr</h4>
+<hr/>
+<h4>知识点：定位到锚点位置</h4>
+<a href="#label1">定位到锚点tab1</a><!--定位锚点，也可以将锚点名称的name用id代替-->
+<br/>
+<a href="#label2">定位到锚点tab2</a>
+<br/>
+<h4>知识点：创造一个没有下划线的链接</h4>
+<textarea>创造一个没有下划线的链接"<a href="#label3" style="text-decoration:none">定位到锚点tab3</a>"</textarea>
+<br/>
+<br/>
+<a href="#label3" style="text-decoration:none">定位到锚点tab3</a>
+
+<h4>知识点：定位到页面顶端<br/>利用target="_top"跳转到页面顶部，利用href来确定是本页面（href="#"）还是其他页面（href=x.html）</h4>
+<a href="#" target="_top">跳转到顶部!</a>
+
+
+<!--其他页面指向当前页面的锚点<a href="http://www.w3school.com.cn/html/html_links.asp#tips">有用的提示</a>
+我们将 # 符号和锚名称添加到 URL 的末端
+-->
+<h4>知识点：发送邮件<br/>只有一个收件人和主题(空格用%20代替,不用也行)</h4>
+<a href="mailto:someone@qq.com?subject=hello again">发送邮件</a>
+<p>
+这是另一个包含收件人、抄送和密件抄送的 mailto 链接：
+<a href="mailto:toWho@microsoft.com?cc=copyTO@microsoft.com&bcc=secritCopyTO@microsoft.com&subject=hello, welcome to summer!">发送邮件！</a>
+</p>
+
+<h4>知识点：插入图片<br/>设置静态图片或者动态图片,设置图片宽高,斜线往左往右都可以</h4>
+<img src="E:\Practice\html\demo\picture\eg_mouse.jpg" width="128" height="128"/>
+<p>
+一幅动画图像：
+<img src="E:\Practice\html\demo\picture\eg_cute.gif" width="50" height="50" />
+<h4>鼠标放在图片上，大多浏览器会显示图alt的内容，图片显示不出来才会替代文本，chrome鼠标放上去不显示啊</h4>
+
+<img src="E:\Practice\html\demo\picture\eg_mouse.jpg" width="128" height="128"/ alt="Big Mouse">
+<p>知识点：alt 属性用来为图像定义一串预备的可替换的文本。替换文本属性的值是用户定义的;<br/>
+在浏览器无法载入图像时，替换文本属性告诉读者她们失去的信息。此时，浏览器将显示这个替代性的文本而不是图像</p><img src="E:\Practice\html\demo\picture\eg_mouse123.jpg" width="128" height="128"/ alt="Big Mouse">
+<h4>知识点：添加背景图片</h4>
+<!--body background="/i/eg_background.jpg"-->
+<h4>知识点：设置文字中排列图像的对齐方式：文本的位置align="bottom","middle","top"</h4>
+
+<p>图像 <img src="E:\Practice\html\demo\picture\eg_cute.gif" align="bottom"> 在文本中</p>
+
+<p>图像 <img src="E:\Practice\html\demo\picture\eg_cute.gif" align="middle"> 在文本中</p>
+
+<p>图像 <img src="E:\Practice\html\demo\picture\eg_cute.gif" align="top"> 在文本中</p>
+
+<p>请注意，bottom 对齐方式是默认的对齐方式。</p>
+<h4>知识点：如何使图片浮动至段落的左边或右边。：图像的位置align="left","right"</h4>
+<p>图像 <img src="E:\Practice\html\demo\picture\eg_cute.gif" align="left"> 带有图像的一个段落。图像的 align 属性设置为 "left"。图像将浮动到文本的左侧</p>
+<br/>
+<p>图像 <img src="E:\Practice\html\demo\picture\eg_cute.gif" align="right"> 带有图像的一个段落。图像的 align 属性设置为 "right"。图像将浮动到段落的右侧</p>
+<h4>通过改变 img 标签的 "height" 和 "width" 属性的值，您可以放大或缩小图像</h4>
+<img src="E:\Practice\html\demo\picture\eg_cute.gif" width="50" height="50">
+<img src="E:\Practice\html\demo\picture\eg_cute.gif" width="100" height="100">
+<p>
+把图片当链接用</p>
+<a href="https://www.baidu.com/"><img src="E:\Practice\html\demo\picture\eg_mouse.jpg"/></a>
+<h4>把图像转换为图像映射</h4>
+
+
+<h4>表格,以table开始，tr表示行，td表示列</h4>
+<p>没有表框的表格</p>
+
+<table>
+	<tr>
+		<td>100</td>
+		<td>200</td>
+	</tr>
+	<tr>
+		<td>300</td>
+		<td>400</td>
+	</tr>
+</table>
+
+<h4>border值越大，边框越粗,水平的表头</h4>
+<table border="8">
+	<tr>
+	<th>姓名</th>
+	<th>电话</th>
+	<th>性别</th>
+	</tr>
+
+	<tr>
+		<td>1行1列</td>
+		<td>1行2列</td>
+		<td>1行3列</td>
+	</tr>
+	<tr>
+		<td>2行1列</td>
+		<td>2行2列</td>
+		<td>2行3列</td>
+	</tr>
+	<tr>
+		<td>3行1列</td>
+		<td>3行2列</td>
+		<td>3行3列</td>
+	</tr>	
+</table>
+<!--我是分割线-->
+<h4>表头：垂直的表头,,本例展示如何使用 "&nbsp;" 处理没有内容的单元格。</h4>
+<table border="8">
+	
+
+	<tr>
+		<th>姓名</th>
+		<td>1行1列</td>
+		<td>1行2列</td>
+		<td></td>
+	</tr>
+	<tr>
+		<th>电话</th>
+		<td>2行1列</td>
+		<td>2行2列</td>
+		<td>2行3列</td>
+	</tr>
+	<tr>
+		<th>性别</th>
+		<td>3行1列</td>
+		<td>3行2列</td>
+		<td>3行3列</td>
+	</tr>	
+</table>
+<!--我是分割线-->
+
+<h4>横跨两行或者两列的表格，rowspan，colspan</h4>
+<p>横跨2列</p>
+<table border="1">
+	<tr>
+		<th>姓名</th>
+		<th colspan=2>电话</th>
+	</tr>
+	<tr>
+		<td>张三</td>
+		<td>13111111111</td>
+		<td>13111111111</td>
+	</tr>
+	<tr>
+		<td>李四</td>
+		<td>13111111111</td>
+		<td>13111111111</td>
+	</tr>
+</table>
+
+<!--我是分割线-->
+
+<p>横跨2行</p>
+<table border="1">
+	<tr>
+		<th>姓名</th>
+		<td >张三</td>
+		<td>李四</td>
+		
+	</tr>
+	<tr>
+		<th rowspan="2">电话</td>
+		<td>13111111111</td>
+		<td>13111111111</td>
+		
+	</tr>
+	<tr>
+		
+		<td>13111111111</td>
+		<td>13111111111</td>
+
+	</tr>
+</table>
+
+
+
+<!--我是分割线-->
+
+<p>表格内套表格,表格内的标签</p>
+<table border="1">
+<tr>
+  <td>
+   <p>这是一个段落。</p>
+   <p>这是另一个段落。</p>
+  </td>
+  <td>这个单元包含一个表格：
+   <table border="1">
+   <tr>
+     <td>A</td>
+     <td>B</td>
+   </tr>
+   <tr>
+     <td>C</td>
+     <td>D</td>
+   </tr>
+   </table>
+  </td>
+</tr>
+<tr>
+  <td>这个单元包含一个列表：
+   <ul>
+    <li>苹果</li>
+    <li>香蕉</li>
+    <li>菠萝</li>
+   </ul>
+  </td>
+  <td>HELLO</td>
+</tr>
+</table>
+<h4>知识点：cellpadding 来创建单元格内容与其边框之间的空白。</h4>
+<table border="1" cellpadding="10">
+	<tr>
+		<td>1233333</td>
+		<td>2</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>4</td>
+	</tr>
+</table>
+<h4>知识点：cellspacing 来创建单元格之间的空白。</h4>
+<table border="1" cellspacing="10">
+	<tr>
+		<td bgcolor="blue">1233333</td>
+		<td >2</td>
+	</tr>
+	<tr>
+		<td background="E:\Practice\html\demo\picture\eg_cute.gif">3</td>
+		<td>4</td>
+	</tr>
+</table>
+<h4>像表格添加背景色，像表格单元格添加背景颜色，背景图片bgcolor, background</h4>
+<table border="1" cellspacing="10" background="E:\Practice\html\demo\picture\eg_planets.jpg">
+	<tr>
+		<td bgcolor="blue">1233333</td>
+		<td >2</td>
+	</tr>
+	<tr>
+		<td >3</td>
+		<td>4</td>
+	</tr>
+</table>
+
+<h4>本例演示如何使用 "align" 属性left，center,right排列单元格内容,以便创建一个美观的表格。</h4>
+<table width="400" border="1">
+ <tr>
+  <th align="left">消费项目....</th>
+  <th align="center">一月</th>
+  <th align="right">二月</th>
+ </tr>
+ <tr>
+  <td align="left">衣服</td>
+  <td align="center">$241.10</td>
+  <td align="right">$50.20</td>
+ </tr>
+ <tr>
+  <td align="left">化妆品</td>
+  <td align="center">$30.00</td>
+  <td align="right">$44.45</td>
+ </tr>
+ <tr>
+  <td align="left">食物</td>
+  <td align="center">$730.40</td>
+  <td align="right">$650.00</td>
+ </tr>
+ <tr>
+  <th align="left">总计</th>
+  <th align="center">$1001.50</th>
+  <th align="right">$744.65</th>
+ </tr>
+</table>
+<h4>利用frame=box，above，below，hsides，vsides来控制围绕表格的边框</h4>
+<p>注意，有frame来控制边框，就不能有border</p>
+<p>下面是box的例子</p>
+<table   frame="box" >
+	<tr>
+		<td>date</td>
+		<td>2018-05-16</td>
+	</tr>		
+	<tr>
+		<td>fee</td>
+		<td>null</td>
+	</tr>
+
+</table>
+
+<p>下面是above的例子</p>
+<table   frame="above" >
+	<tr>
+		<td>date</td>
+		<td>2018-05-16</td>
+	</tr>		
+	<tr>
+		<td>fee</td>
+		<td>null</td>
+	</tr>
+
+</table>
+<h3>HTML列表</h3>
+<h4>列表：分为有序列表和无序列表</h4>
+<p>无序列表：始于 ul 标签。每个列表项始于 li 标签;项目符号type=disc（实心圆）,circle（空心圆）,square（实心方块）<p>
+<ul type="square">
+  <li>咖啡</li>
+  <li>茶</li>
+  <li>牛奶</li>
+</ul>
+
+<p>有序列表：始于 ol 标签。每个列表项始于 li 标签；可以设置start，开始的数字，不设置默认是1开始</p>
+<p>有序列表的项目符号：默认是数字；type=A,a(小写英文字母),I（大写罗马数字）,i(小写罗马数字)</p>
+<ol start="10" >
+  <li>咖啡</li>
+  <li>茶</li>
+  <li>牛奶</li>
+</ol>
+
+<ol  type="A" >
+  <li>咖啡</li>
+  <li>茶</li>
+  <li>牛奶</li>
+</ol>
+<h3>定义列表</h3>
+<p>自定义列表以 dl标签开始。每个自定义列表项以 dt 开始。每个自定义列表项的定义以 dd 开始</p>
+<dl>
+	<dt>计算机</dt>
+	<dd>一个用来计算的机器</dd>
+	<dt>显示器</dt>
+	<dd>一个用来显示图像的屏幕</dd>
+</dl>
+
+<h4>内联框架 iframe；height 和 width 属性用于规定 iframe 的高度和宽度</h4>
+<p>URL 指向隔离页面的位置</p>
+
+<iframe src="frameset.html" width="200" height="200"></iframe>
+<p>删除边框:frameborder="0"</p>
+<p>下面两条语句是将iframe内联框架内的内容替换成baidu的链接
+<iframe src="./example/framelinkContent.html" name="iframeLink"></iframe>
+<p><a href="http://baidu.com" target="iframeLink">baidu</a></p>
+
+
+<p>使用 iframe 作为链接的目标（target）;链接的 target 属性必须引用 iframe 的 name 属性：</p>
+
+
+
+</body>
+
+</html>
